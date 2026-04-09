@@ -1,4 +1,4 @@
-{
+﻿{
 	"FileVersion": 3,
 	"EngineAssociation": "5.5",
 	"Category": "",
@@ -7,7 +7,17 @@
 		{
 			"Name": "P_Ashen_Crown",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"UMG",
+				"ModelViewViewModel",
+				"AIModule",
+				"ModelViewViewModelEditor",
+				"Engine",
+				"CoreUObject",
+				"GameplayAbilities",
+				"DeveloperSettings"
+			]
 		}
 	],
 	"Plugins": [
@@ -17,6 +27,14 @@
 			"TargetAllowList": [
 				"Editor"
 			]
+		},
+		{
+			"Name": "ModelViewViewModel",
+			"Enabled": true
+		},
+		{
+			"Name": "GameplayAbilities",
+			"Enabled": true
 		}
 	]
 }
