@@ -15,9 +15,15 @@ This project is a medieval-themed Soulslike game developed using Unreal Engine 5
 <img src="https://github.com/user-attachments/assets/5b008bf4-cdda-440e-b156-c8f06917457d" width="600" height="450"/>
 </div>
 
-The Dialogue Component is a system that constructs conversational flows based on dialogue data defined in a DataTable. Each conversation is organized into paragraphs, and Tasks can be assigned to each paragraph to trigger events at the moment of transition between paragraphs. Additionally, choices can have Decorators applied to control their availability based on specific conditions. This allows for branching dialogue that adapts to the player’s state or progression. Tasks and Decorators are not instantiated repeatedly. Instead, they are executed in a reusable form through Data Assets and Class Default Object (CDO). This approach reduces unnecessary object creation and contributes to overall performance optimization. The overall design is inspired by the AI Behavior Tree structure in Unreal Engine, aiming to create a data-driven dialogue system that is both highly extensible and maintainable.  
+The Dialogue Component is a system that constructs conversational flows based on dialogue data defined in a DataTable. The overall design is inspired by the AI Behavior Tree structure in Unreal Engine, aiming to create a data-driven dialogue system that is both highly extensible and maintainable.
+* Each conversation is organized into paragraphs, and Tasks can be assigned to each paragraph to trigger events at the moment of transition between paragraphs.
+* Choices can have Decorators applied to control their availability based on specific conditions. This allows for branching dialogue that adapts to the player’s state or progression.
+* Tasks and Decorators are not instantiated repeatedly. Instead, they are executed in a reusable form through Data Assets and Class Default Object (CDO). This approach reduces unnecessary object creation and contributes to overall performance optimization. 
 
-Dialogue Component는 주어진 DataTable에 정의된 대사 데이터를 기반으로 대화 흐름을 구성하는 컴포넌트입니다. 각 대화는 문단 단위로 구성되며, 문단마다 Task를 배치하여 문단 전환 시점에 이벤트를 실행할 수 있습니다. 또한 선택지에는 Decorator를 적용하여 조건에 따라 활성화 여부를 제어합니다. 이를 통해 플레이어의 상태나 진행 상황에 따라 분기되는 대화를 구현할 수 있습니다. Task와 Decorator는 매번 인스턴싱하지 않고, Data Asset과 CDO(Class Default Object)를 통해 재사용 가능한 형태로 실행됩니다. 이러한 불필요한 객체 생성을 줄여 최적화하는 데 기여합니다. 이러한 전체 설계는 언리얼 엔진의 AI Behavior Tree 구조를 참고하였으며, 데이터 기반이면서도 확장성과 유지보수성이 높은 대화 시스템을 지향하여 제작되었습니다.
+Dialogue Component는 주어진 DataTable에 정의된 대사 데이터를 기반으로 대화 흐름을 구성하는 컴포넌트입니다. 전체 설계는 언리얼 엔진의 AI Behavior Tree 구조를 참고하였으며, 데이터 기반이면서도 확장성과 유지보수성이 높은 대화 시스템을 지향하여 제작되었습니다. 
+* 각 대화는 문단 단위로 구성되며, 문단마다 Task를 배치하여 문단 전환 시점에 이벤트를 실행할 수 있습니다.
+* 선택지에는 Decorator를 적용하여 조건에 따라 활성화 여부를 제어합니다. 이를 통해 플레이어의 상태나 진행 상황에 따라 분기되는 대화를 구현할 수 있습니다.
+* Task와 Decorator는 매번 인스턴싱하지 않고, Data Asset과 CDO(Class Default Object)를 통해 재사용 가능한 형태로 실행됩니다. 이러한 불필요한 객체 생성을 줄여 최적화하는 데 기여합니다.
 
 ## :wrench: Tools & Technologies (사용한 기술)
 - **Client** : Unreal Engine 5.5
